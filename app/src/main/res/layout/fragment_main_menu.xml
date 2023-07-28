@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Ui.MainMenuFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/receiving"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/receiving"
+        style="@style/menuButton"
+        app:layout_constraintBottom_toTopOf="@+id/issue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/issue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/issue"
+        style="@style/menuButton"
+        app:layout_constraintBottom_toTopOf="@+id/transfer"
+        app:layout_constraintEnd_toEndOf="@+id/receiving"
+        app:layout_constraintStart_toStartOf="@+id/receiving"
+        app:layout_constraintTop_toBottomOf="@+id/receiving" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/transfer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/transfer"
+        style="@style/menuButton"
+        app:layout_constraintBottom_toTopOf="@+id/audit"
+        app:layout_constraintEnd_toEndOf="@+id/issue"
+        app:layout_constraintStart_toStartOf="@+id/issue"
+        app:layout_constraintTop_toBottomOf="@+id/issue" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/audit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/audit"
+        style="@style/menuButton"
+        app:layout_constraintBottom_toTopOf="@+id/returns"
+        app:layout_constraintEnd_toEndOf="@+id/transfer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transfer" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/returns"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/returns"
+        style="@style/menuButton"
+        app:layout_constraintBottom_toTopOf="@+id/reports"
+        app:layout_constraintEnd_toEndOf="@+id/audit"
+        app:layout_constraintStart_toStartOf="@+id/audit"
+        app:layout_constraintTop_toBottomOf="@+id/audit" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/reports"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reports"
+        style="@style/menuButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/returns"
+        app:layout_constraintStart_toStartOf="@+id/returns"
+        app:layout_constraintTop_toBottomOf="@+id/returns" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

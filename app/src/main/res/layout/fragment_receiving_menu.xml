@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/page_padding"
+    tools:context=".Ui.ReceivingMenuFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/receive_po"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/receive_po"
+        app:cornerRadius="@dimen/button_radius"
+        style="@style/menuButton"
+        app:layout_constraintBottom_toTopOf="@+id/inspection"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/inspection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inspection"
+        app:cornerRadius="@dimen/button_radius"
+        style="@style/menuButton"
+        app:layout_constraintBottom_toTopOf="@+id/put_away"
+        app:layout_constraintTop_toBottomOf="@+id/receive_po"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/put_away"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/put_away"
+        app:cornerRadius="@dimen/button_radius"
+        style="@style/menuButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inspection"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
